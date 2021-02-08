@@ -1,20 +1,70 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
-    <ion-title>
-      Blank
-    </ion-title>
-  </ion-toolbar>
+    <ion-toolbar>
+        <ion-title>
+            Лекція2
+        </ion-title>
+    </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
+    <ion-header collapse="condense">
+        <ion-toolbar>
+            <ion-title size="large">Blank</ion-title>
+        </ion-toolbar>
+    </ion-header>
 
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Приклад1</ion-card-subtitle>
+            <ion-card-title>Синхроність та блокування</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button (click)="sync()">Запуск</ion-button>
+            <p>{{myDate}}</p>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Приклад2</ion-card-subtitle>
+            <ion-card-title>Проста асинхроність</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button (click)="async1()">Запуск</ion-button>
+
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Приклад3</ion-card-subtitle>
+            <ion-card-title>Promise</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button (click)="async_promise()">Чи буде премія?</ion-button>
+            <ion-button (click)="async_promise_team()">Премія для команди?</ion-button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Приклад4</ion-card-subtitle>
+            <ion-card-title>Async/Await</ion-card-title>
+        </ion-card-header>
+
+        <ion-card-content>
+            <ion-button (click)="async_await_promise_team()">Нова премія для команди!</ion-button>
+        </ion-card-content>
+    </ion-card>
+    <ion-card>
+        <ion-card-header>
+            <ion-card-subtitle>Приклад5</ion-card-subtitle>
+            <ion-card-title>fetch</ion-card-title>
+            <p>Зчитати з серверу інформацію о користувачах і їх статках та знайти користувача з мінімальним та максимальним статком
+            </p>
+        </ion-card-header>
+        <ion-card-content>
+            <ion-button (click)="user_ras()">Користувачі</ion-button>
+        </ion-card-content>
+    </ion-card>
 </ion-content>
